@@ -7,7 +7,7 @@ log-level: info
 proxies:
   - name: "Home"
     type: http
-    server: 192.168.1.73
+    server: 192.168.1.70
     port: 10810
 
 proxy-groups:
