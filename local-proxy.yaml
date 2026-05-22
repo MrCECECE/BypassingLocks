@@ -6,9 +6,9 @@ log-level: info
 
 proxies:
   - name: "Home"
-    type: http
+    type: socks5
     server: 192.168.1.64
-    port: 10810
+    port: 10808
 
 proxy-groups:
   - name: "SWITCH"
@@ -21,8 +21,6 @@ rules:
   - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
   - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
   - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
-
   - DOMAIN-SUFFIX,ru,DIRECT
   - DOMAIN-SUFFIX,рф,DIRECT
-
   - MATCH,SWITCH
